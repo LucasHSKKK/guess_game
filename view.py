@@ -1,10 +1,9 @@
-from controller import Controller
 import tkinter as tk
 from functools import partial
 
 class View:
-    def __init__(self):
-        self.controller = Controller(None, self)
+    def __init__(self, controller):
+        self.controller = controller
 
         # create the main application
         self.root = tk.Tk()
@@ -16,7 +15,7 @@ class View:
             font=("Arial", 20),
             bg="white",
             fg="black",
-            command=partial(self.english_clicked),
+            command=partial(self.controller.portugues_button),
         )
         self.button2 = tk.Button(
             self.root,
@@ -24,7 +23,7 @@ class View:
             font=("Arial", 20),
             bg="white",
             fg="black",
-            command=partial(self.english_clicked),
+            command=partial(self.controller.english_button),
         )
         self.button1.pack(pady=20)
         self.button2.pack(pady=20)
