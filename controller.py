@@ -10,8 +10,14 @@ class Controller:
         self.view.run()
 
     def portugues_button(self):
-        self.view.portugues_clicked()
+        guess = self.model.get_portugues_guess()
+        self.view.portugues_clicked(guess)
 
     def english_button(self):
-        self.view.english_clicked()
+        guess = self.model.get_english_guess()
+        self.view.english_clicked(guess)
+
+
+
+
 

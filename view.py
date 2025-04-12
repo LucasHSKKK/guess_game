@@ -1,6 +1,5 @@
 import tkinter as tk
 from functools import partial
-import random
 import global_variables
 
 
@@ -31,7 +30,7 @@ class View:
         self.button1.pack(pady=20)
         self.button2.pack(pady=20)
 
-    def english_clicked(self):
+    def english_clicked(self, guess):
         for widget in self.root.winfo_children():
             widget.destroy()
 
@@ -64,8 +63,6 @@ class View:
             font=("Arial", 20),
         )
 
-        guess = random.choice(list(global_variables.words_english.keys()))
-
         self.listbox = tk.Listbox(
             self.root,
             bg=self.root.cget("bg"),
@@ -82,7 +79,7 @@ class View:
         self.label_dica.pack(pady=20)
         self.listbox.pack(pady=20)
 
-    def portugues_clicked(self):
+    def portugues_clicked(self, guess):
         for widget in self.root.winfo_children():
             widget.destroy()
 
@@ -114,8 +111,6 @@ class View:
             text="Dica:",
             font=("Arial", 20),
         )
-
-        guess = random.choice(list(global_variables.words_portugues.keys()))
 
         self.listbox = tk.Listbox(
             self.root,
