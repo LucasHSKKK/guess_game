@@ -1,5 +1,8 @@
 import tkinter as tk
 from functools import partial
+import random
+import global_variables
+
 
 class View:
     def __init__(self, controller):
@@ -31,7 +34,7 @@ class View:
     def english_clicked(self):
         for widget in self.root.winfo_children():
             widget.destroy()
-        
+
         self.label = tk.Label(
             self.root,
             text="Enter your guess:",
@@ -54,14 +57,35 @@ class View:
             fg="black",
             font=("Arial", 20),
         )
+
+        self.label_dica = tk.Label(
+            self.root,
+            text="Hint:",
+            font=("Arial", 20),
+        )
+
+        guess = random.choice(list(global_variables.words_english.keys()))
+
+        self.listbox = tk.Listbox(
+            self.root,
+            bg=self.root.cget("bg"),
+            fg="red",
+            font=("Arial", 20),
+        )
+
+        self.listbox.insert(0, global_variables.words_english[guess]["hint1"])
+
+        # Pack the widgets
         self.label.pack(pady=20)
         self.entry.pack(pady=20)
         self.button.pack(pady=20)
+        self.label_dica.pack(pady=20)
+        self.listbox.pack(pady=20)
 
     def portugues_clicked(self):
         for widget in self.root.winfo_children():
             widget.destroy()
-        
+
         self.label = tk.Label(
             self.root,
             text="digite seu palpite:",
@@ -84,9 +108,29 @@ class View:
             fg="black",
             font=("Arial", 20),
         )
+
+        self.label_dica = tk.Label(
+            self.root,
+            text="Dica:",
+            font=("Arial", 20),
+        )
+
+        guess = random.choice(list(global_variables.words_portugues.keys()))
+
+        self.listbox = tk.Listbox(
+            self.root,
+            bg=self.root.cget("bg"),
+            fg="red",
+            font=("Arial", 20),
+        )
+
+        self.listbox.insert(0, global_variables.words_portugues[guess]["dica1"])
+
         self.label.pack(pady=20)
         self.entry.pack(pady=20)
         self.button.pack(pady=20)
+        self.label_dica.pack(pady=20)
+        self.listbox.pack(pady=20)
 
     def run(self):
         self.root.mainloop()

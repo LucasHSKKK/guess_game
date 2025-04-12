@@ -1,3 +1,4 @@
+
 words_portugues = {
     'gato': {'dica1': 'animal de estimação.', 'dica2': 'adora dormir e caçar.', 'dica3': 'faz miau.'},
     'mesa': {'dica1': 'objeto de madeira.', 'dica2': 'Usamos para comer, estudar ou trabalhar.', 'dica3': 'Tem pernas, mas não anda.'},
@@ -15,3 +16,17 @@ words_english = {
     'computer': {'hint1': 'electronic machine.', 'hint2': 'used for work or study.', 'hint3': 'has a keyboard and mouse.'},
     'helicopter': {'hint1': 'flies.', 'hint2': 'has rotors.', 'hint3': 'used by firefighters and police.'}
 }
+
+import random 
+
+class Model:
+    def __init__(self, controller):
+        self.controller = controller
+
+    def get_english_guess():
+        guess = random.choice(list(words_english.keys()))
+
+    def get_portugues_guess():
+        guess = random.choice(list(words_portugues.keys()))
+
+

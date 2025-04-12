@@ -1,8 +1,10 @@
 from view import View
+from model import Model
 
 class Controller:
     def __init__(self):
         self.view = View(self)
+        self.model = Model(self)
 
     def start_game(self):
         self.view.run()
