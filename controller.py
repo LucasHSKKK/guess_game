@@ -17,7 +17,6 @@ class Controller:
         guess = self.model.get_english_guess()
         self.view.english_clicked(guess)
 
-
-
-
+    def get_entry_guess(self, guess_entry):
+        self.model.check_guess(guess_entry)
 

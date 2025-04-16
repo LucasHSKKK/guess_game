@@ -48,6 +48,8 @@ class View:
             bd=3,
             font=("Arial", 20),
         )
+        guess_entry = self.entry.get()
+
         self.button = tk.Button(
             self.root,
             text="Submit",
@@ -55,6 +57,7 @@ class View:
             bg="white",
             fg="black",
             font=("Arial", 20),
+            command=partial(self.controller.get_entry_guess, guess_entry),
         )
 
         self.label_dica = tk.Label(
@@ -71,6 +74,7 @@ class View:
         )
 
         self.listbox.insert(0, global_variables.words_english[guess]["hint1"])
+
 
         # Pack the widgets
         self.label.pack(pady=20)
