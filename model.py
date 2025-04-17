@@ -5,20 +5,18 @@ import random
 class Model:
     def __init__(self, controller=None):
         self.controller = controller
+        self.right_guess = ""
+        self.tries = 0
 
     def get_english_guess(self):
-        guess = random.choice(list(global_variables.words_english.keys()))
-        return guess
+        return random.choice(list(global_variables.words_english.keys()))
 
     def get_portugues_guess(self):
-        guess = random.choice(list(global_variables.words_portugues.keys()))
-        return guess
+        return random.choice(list(global_variables.words_portugues.keys()))
 
     def check_guess(self, guess_entry):
-        if guess_entry == right_guess:
-            print("correct")
+        if guess_entry.lower() == self.right_guess.lower():
+            self.controller.controller_win()
         else:
-            print("incorrect")
-
-    right_guess = get_english_guess()
-    tries = 0
+            self.tries += 1
+            self.controller.update_hint()
