@@ -12,6 +12,10 @@ class View:
         self.root = tk.Tk()
         self.root.geometry("800x800")
         self.root.title("Guess Game")
+        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.label_bg = tk.Label(self.root, image=self.bg)
+        self.label_bg.place(x=0, y=0)
+
         self.button1 = tk.Button(
             self.root,
             text="portugues",
@@ -34,6 +38,10 @@ class View:
     def english_clicked(self, guess):
         for widget in self.root.winfo_children():
             widget.destroy()
+
+        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.label_bg = tk.Label(self.root, image=self.bg)
+        self.label_bg.place(x=0, y=0)
 
         self.label = tk.Label(
             self.root,
@@ -89,6 +97,10 @@ class View:
         for widget in self.root.winfo_children():
             widget.destroy()
 
+        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.label_bg = tk.Label(self.root, image=self.bg)
+        self.label_bg.place(x=0, y=0)
+
         self.label = tk.Label(
             self.root,
             text="digite seu palpite:",
@@ -141,6 +153,10 @@ class View:
         for widget in self.root.winfo_children():
             widget.destroy()
 
+        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.label_bg = tk.Label(self.root, image=self.bg)
+        self.label_bg.place(x=0, y=0)
+
         self.label = tk.Label(
             self.root,
             text="You win!",
@@ -174,6 +190,10 @@ class View:
     def lose_screen(self):
         for widget in self.root.winfo_children():
             widget.destroy()
+            
+        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.label_bg = tk.Label(self.root, image=self.bg)
+        self.label_bg.place(x=0, y=0)
 
         self.label = tk.Label(
             self.root,
