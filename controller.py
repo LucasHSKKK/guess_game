@@ -40,3 +40,9 @@ class Controller:
             )
         else:
             self.view.lose_screen()
+    
+    def try_again(self):
+        if self.model.right_guess in global_variables.words_portugues:
+            self.portugues_button()
+        else:
+            self.english_button()

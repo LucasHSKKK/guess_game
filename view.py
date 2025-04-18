@@ -157,8 +157,19 @@ class View:
             bg="white",
         )
 
+        self.button = tk.Button(
+            self.root,
+            text="try again",
+            activebackground="gray",
+            bg="white",
+            fg="black",
+            font=("Arial", 20),
+            command=partial(self.controller.try_again),
+        )
+
         self.label.pack(pady=20)
         self.image_label.pack(pady=20)
+        self.button.pack(pady=20)   
 
     def lose_screen(self):
         for widget in self.root.winfo_children():
@@ -179,8 +190,19 @@ class View:
             bg="white",
         )
 
+        self.button = tk.Button(
+            self.root,
+            text="try again",
+            activebackground="red",
+            bg="white",
+            fg="black",
+            font=("Arial", 20),
+            command=partial(self.controller.try_again),
+        )
+
         self.label.pack(pady=20)
         self.image_label.pack(pady=20)
+        self.button.pack(pady=20)
 
     def run(self):
         self.root.mainloop()
