@@ -12,7 +12,9 @@ class View:
         self.root = tk.Tk()
         self.root.geometry("800x800")
         self.root.title("Guess Game")
-        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.bg = Image.open("images/bg2.png")
+        self.bg = self.bg.resize((1920, 1080))
+        self.bg = ImageTk.PhotoImage(self.bg)
         self.label_bg = tk.Label(self.root, image=self.bg)
         self.label_bg.place(x=0, y=0)
 
@@ -39,7 +41,9 @@ class View:
         for widget in self.root.winfo_children():
             widget.destroy()
 
-        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.bg = Image.open("images/bg2.png")
+        self.bg = self.bg.resize((1920, 1080))
+        self.bg = ImageTk.PhotoImage(self.bg)
         self.label_bg = tk.Label(self.root, image=self.bg)
         self.label_bg.place(x=0, y=0)
 
@@ -97,7 +101,9 @@ class View:
         for widget in self.root.winfo_children():
             widget.destroy()
 
-        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.bg = Image.open("images/bg2.png")
+        self.bg = self.bg.resize((1920, 1080))
+        self.bg = ImageTk.PhotoImage(self.bg)
         self.label_bg = tk.Label(self.root, image=self.bg)
         self.label_bg.place(x=0, y=0)
 
@@ -153,7 +159,9 @@ class View:
         for widget in self.root.winfo_children():
             widget.destroy()
 
-        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.bg = Image.open("images/bg2.png")
+        self.bg = self.bg.resize((1920, 1080))
+        self.bg = ImageTk.PhotoImage(self.bg)
         self.label_bg = tk.Label(self.root, image=self.bg)
         self.label_bg.place(x=0, y=0)
 
@@ -191,7 +199,9 @@ class View:
         for widget in self.root.winfo_children():
             widget.destroy()
             
-        self.bg = tk.PhotoImage(file="images/bg.png")
+        self.bg = Image.open("images/bg2.png")
+        self.bg = self.bg.resize((1920, 1080))
+        self.bg = ImageTk.PhotoImage(self.bg)
         self.label_bg = tk.Label(self.root, image=self.bg)
         self.label_bg.place(x=0, y=0)
 
