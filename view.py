@@ -22,16 +22,18 @@ class View:
             self.root,
             text="portugues",
             font=("Arial", 20),
-            bg="white",
-            fg="black",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
             command=partial(self.controller.portugues_button),
         )
         self.button2 = tk.Button(
             self.root,
             text="english",
             font=("Arial", 20),
-            bg="white",
-            fg="black",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
             command=partial(self.controller.english_button),
         )
         self.button1.pack(pady=20)
@@ -65,9 +67,9 @@ class View:
         self.button = tk.Button(
             self.root,
             text="Submit",
-            activebackground="red",
-            bg="white",
-            fg="black",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
             font=("Arial", 20),
             command=lambda: self.controller.get_entry_guess(self.entry.get()),
         )
@@ -124,9 +126,9 @@ class View:
         self.button = tk.Button(
             self.root,
             text="enviar",
-            activebackground="red",
-            bg="white",
-            fg="black",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
             font=("Arial", 20),
             command=lambda: self.controller.get_entry_guess(self.entry.get()),
         )
@@ -136,7 +138,7 @@ class View:
             text="Dica:",
             font=("Arial", 20),
         )
-
+        
         self.listbox = tk.Listbox(
             self.root,
             bg=self.root.cget("bg"),
@@ -184,9 +186,9 @@ class View:
         self.button = tk.Button(
             self.root,
             text="try again",
-            activebackground="gray",
-            bg="white",
-            fg="black",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
             font=("Arial", 20),
             command=partial(self.controller.try_again),
         )
@@ -223,9 +225,9 @@ class View:
         self.button = tk.Button(
             self.root,
             text="try again",
-            activebackground="red",
-            bg="white",
-            fg="black",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
             font=("Arial", 20),
             command=partial(self.controller.try_again),
         )

@@ -14,11 +14,13 @@ class Controller:
     def portugues_button(self):
         guess = self.model.get_portugues_guess()
         self.model.right_guess = guess
+        self.model.tries = 0
         self.view.portugues_clicked(guess)
 
     def english_button(self):
         guess = self.model.get_english_guess()
         self.model.right_guess = guess
+        self.model.tries = 0
         self.view.english_clicked(guess)
 
     def get_entry_guess(self, guess_entry):
