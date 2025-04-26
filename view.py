@@ -25,7 +25,7 @@ class View:
             bg="#E9E9E9",
             fg="#0F2C25",
             activebackground="#5A706C",
-            command=partial(self.controller.portugues_button),
+            command=lambda: self.controller.get_guess("portugues"),
         )
         self.button2 = tk.Button(
             self.root,
@@ -34,7 +34,7 @@ class View:
             bg="#E9E9E9",
             fg="#0F2C25",
             activebackground="#5A706C",
-            command=partial(self.controller.english_button),
+            command=lambda: self.controller.get_guess("english"),
         )
         self.button1.pack(pady=20)
         self.button2.pack(pady=20)
@@ -138,7 +138,7 @@ class View:
             text="Dica:",
             font=("Arial", 20),
         )
-        
+
         self.listbox = tk.Listbox(
             self.root,
             bg=self.root.cget("bg"),
@@ -195,12 +195,12 @@ class View:
 
         self.label.pack(pady=20)
         self.image_label.pack(pady=20)
-        self.button.pack(pady=20)   
+        self.button.pack(pady=20)
 
     def lose_screen(self):
         for widget in self.root.winfo_children():
             widget.destroy()
-            
+
         self.bg = Image.open("images/bg2.png")
         self.bg = self.bg.resize((1920, 1080))
         self.bg = ImageTk.PhotoImage(self.bg)

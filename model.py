@@ -8,11 +8,11 @@ class Model:
         self.right_guess = ""
         self.tries = 0
 
-    def get_english_guess(self):
-        return random.choice(list(global_variables.words_english.keys()))
-
-    def get_portugues_guess(self):
-        return random.choice(list(global_variables.words_portugues.keys()))
+    def randon_guess(self, language):
+        if language == "english":
+            return random.choice(list(global_variables.words_english.keys()))
+        else:
+            return random.choice(list(global_variables.words_portugues.keys()))
 
     def check_guess(self, guess_entry):
         if guess_entry.lower() == self.right_guess.lower():

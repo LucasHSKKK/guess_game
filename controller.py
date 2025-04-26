@@ -11,17 +11,17 @@ class Controller:
     def start_game(self):
         self.view.run()
 
-    def portugues_button(self):
-        guess = self.model.get_portugues_guess()
-        self.model.right_guess = guess
-        self.model.tries = 0
-        self.view.portugues_clicked(guess)
-
-    def english_button(self):
-        guess = self.model.get_english_guess()
-        self.model.right_guess = guess
-        self.model.tries = 0
-        self.view.english_clicked(guess)
+    def get_guess(self, language):
+        if language == "english":
+            guess = self.model.randon_guess("english")
+            self.model.right_guess = guess
+            self.model.tries = 0
+            self.view.english_clicked(guess)
+        else:
+            guess = self.model.randon_guess("portugues")
+            self.model.right_guess = guess
+            self.model.tries = 0
+            self.view.portugues_clicked(guess)
 
     def get_entry_guess(self, guess_entry):
         self.model.check_guess(guess_entry)
@@ -42,9 +42,9 @@ class Controller:
             )
         else:
             self.view.lose_screen()
-    
+
     def try_again(self):
         if self.model.right_guess in global_variables.words_portugues:
-            self.portugues_button()
+            self.get_guess("portugues")
         else:
-            self.english_button()
+            self.get_guess("english")
