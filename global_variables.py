@@ -229,6 +229,121 @@ words = {
         "hint2": "usado para decorar ou limpar os pes.",
         "hint3": "pode ser felpudo ou liso.",
     },
+"Katze": {
+        "hint1": "Haustier.",
+        "hint2": "schläft gerne und jagt.",
+        "hint3": "macht Miau.",
+    },
+    "Tisch": {
+        "hint1": "Gegenstand aus Holz.",
+        "hint2": "wird zum Essen, Lernen oder Arbeiten benutzt.",
+        "hint3": "hat Beine, aber läuft nicht.",
+    },
+    "Auto": {
+        "hint1": "Transportmittel.",
+        "hint2": "hat Räder.",
+        "hint3": "wird zum Reisen benutzt.",
+    },
+    "Tasse": {
+        "hint1": "Küchengegenstand.",
+        "hint2": "wird zum Trinken verwendet.",
+        "hint3": "kann aus Glas oder Plastik sein.",
+    },
+    "Computer": {
+        "hint1": "elektronische Maschine.",
+        "hint2": "wird zum Arbeiten oder Lernen verwendet.",
+        "hint3": "hat eine Tastatur und eine Maus.",
+    },
+    "Feuer": {
+        "hint1": "heißes Element.",
+        "hint2": "braucht Sauerstoff zum Brennen.",
+        "hint3": "kann gefährlich sein.",
+    },
+    "Kuchen": {
+        "hint1": "süßes Geburtstagsessen.",
+        "hint2": "wird im Ofen gebacken.",
+        "hint3": "wird mit Mehl und Eiern gemacht.",
+    },
+    "Wolf": {
+        "hint1": "wildes Tier.",
+        "hint2": "sieht aus wie ein Hund.",
+        "hint3": "heult zur Kommunikation.",
+    },
+    "Fisch": {
+        "hint1": "lebt im Wasser.",
+        "hint2": "hat Flossen.",
+        "hint3": "kann an Land nicht atmen.",
+    },
+    "Ente": {
+        "hint1": "Tier, das am Wasser lebt.",
+        "hint2": "macht Quak.",
+        "hint3": "hat einen Schnabel und schwimmt gut.",
+    },
+    "Bett": {
+        "hint1": "wird zum Schlafen benutzt.",
+        "hint2": "steht im Schlafzimmer.",
+        "hint3": "hat Matratze und Kissen.",
+    },
+    "Würfel": {
+        "hint1": "geometrische Form.",
+        "hint2": "hat sechs gleiche Seiten.",
+        "hint3": "sieht aus wie ein Spielwürfel.",
+    },
+    "Ratte": {
+        "hint1": "kleines Tier.",
+        "hint2": "liebt Käse.",
+        "hint3": "rennt schnell und lebt in Löchern.",
+    },
+    "Buch": {
+        "hint1": "Lesegenstand.",
+        "hint2": "hat Seiten mit Text.",
+        "hint3": "kann Abenteuer, Roman oder Lehrbuch sein.",
+    },
+    "Schiff": {
+        "hint1": "Transportmittel.",
+        "hint2": "fährt auf dem Meer.",
+        "hint3": "kann sehr groß sein.",
+    },
+    "Sohle": {
+        "hint1": "Teil eines Schuhs.",
+        "hint2": "berührt den Boden.",
+        "hint3": "kann aus Gummi sein.",
+    },
+    "Bonbon": {
+        "hint1": "kleines Süßigkeit.",
+        "hint2": "schmilzt im Mund.",
+        "hint3": "gibt es in vielen Geschmacksrichtungen.",
+    },
+    "Stein": {
+        "hint1": "fester Naturgegenstand.",
+        "hint2": "kann klein oder groß sein.",
+        "hint3": "wird in Bauwerken oder zur Dekoration verwendet.",
+    },
+    "Wolke": {
+        "hint1": "schwebt am Himmel.",
+        "hint2": "besteht aus Wasserdampf.",
+        "hint3": "kann Regen bringen.",
+    },
+    "Schlitten": {
+        "hint1": "Fahrzeug ohne Räder.",
+        "hint2": "wird im Schnee benutzt.",
+        "hint3": "wird zu Weihnachten von Rentieren gezogen.",
+    },
+    "Fenster": {
+        "hint1": "Teil eines Hauses.",
+        "hint2": "lässt Licht hinein.",
+        "hint3": "kann geöffnet oder geschlossen werden.",
+    },
+    "Teller": {
+        "hint1": "Küchengegenstand.",
+        "hint2": "wird zum Servieren von Essen verwendet.",
+        "hint3": "kann aus Porzellan oder Plastik sein.",
+    },
+    "Teppich": {
+        "hint1": "liegt auf dem Boden.",
+        "hint2": "wird zur Dekoration oder zum Füßetrocknen benutzt.",
+        "hint3": "kann weich oder flach sein.",
+    },
 }
 
 words_portugues = {
@@ -464,5 +579,122 @@ words_english = {
         "hint1": "lies on the floor.",
         "hint2": "used to decorate or clean feet.",
         "hint3": "can be soft or flat.",
+    },
+}
+words_german = {
+    "Katze": {
+        "hint1": "Haustier.",
+        "hint2": "schläft gerne und jagt.",
+        "hint3": "macht Miau.",
+    },
+    "Tisch": {
+        "hint1": "Gegenstand aus Holz.",
+        "hint2": "wird zum Essen, Lernen oder Arbeiten benutzt.",
+        "hint3": "hat Beine, aber läuft nicht.",
+    },
+    "Auto": {
+        "hint1": "Transportmittel.",
+        "hint2": "hat Räder.",
+        "hint3": "wird zum Reisen benutzt.",
+    },
+    "Tasse": {
+        "hint1": "Küchengegenstand.",
+        "hint2": "wird zum Trinken verwendet.",
+        "hint3": "kann aus Glas oder Plastik sein.",
+    },
+    "Computer": {
+        "hint1": "elektronische Maschine.",
+        "hint2": "wird zum Arbeiten oder Lernen verwendet.",
+        "hint3": "hat eine Tastatur und eine Maus.",
+    },
+    "Feuer": {
+        "hint1": "heißes Element.",
+        "hint2": "braucht Sauerstoff zum Brennen.",
+        "hint3": "kann gefährlich sein.",
+    },
+    "Kuchen": {
+        "hint1": "süßes Geburtstagsessen.",
+        "hint2": "wird im Ofen gebacken.",
+        "hint3": "wird mit Mehl und Eiern gemacht.",
+    },
+    "Wolf": {
+        "hint1": "wildes Tier.",
+        "hint2": "sieht aus wie ein Hund.",
+        "hint3": "heult zur Kommunikation.",
+    },
+    "Fisch": {
+        "hint1": "lebt im Wasser.",
+        "hint2": "hat Flossen.",
+        "hint3": "kann an Land nicht atmen.",
+    },
+    "Ente": {
+        "hint1": "Tier, das am Wasser lebt.",
+        "hint2": "macht Quak.",
+        "hint3": "hat einen Schnabel und schwimmt gut.",
+    },
+    "Bett": {
+        "hint1": "wird zum Schlafen benutzt.",
+        "hint2": "steht im Schlafzimmer.",
+        "hint3": "hat Matratze und Kissen.",
+    },
+    "Würfel": {
+        "hint1": "geometrische Form.",
+        "hint2": "hat sechs gleiche Seiten.",
+        "hint3": "sieht aus wie ein Spielwürfel.",
+    },
+    "Ratte": {
+        "hint1": "kleines Tier.",
+        "hint2": "liebt Käse.",
+        "hint3": "rennt schnell und lebt in Löchern.",
+    },
+    "Buch": {
+        "hint1": "Lesegenstand.",
+        "hint2": "hat Seiten mit Text.",
+        "hint3": "kann Abenteuer, Roman oder Lehrbuch sein.",
+    },
+    "Schiff": {
+        "hint1": "Transportmittel.",
+        "hint2": "fährt auf dem Meer.",
+        "hint3": "kann sehr groß sein.",
+    },
+    "Sohle": {
+        "hint1": "Teil eines Schuhs.",
+        "hint2": "berührt den Boden.",
+        "hint3": "kann aus Gummi sein.",
+    },
+    "Bonbon": {
+        "hint1": "kleines Süßigkeit.",
+        "hint2": "schmilzt im Mund.",
+        "hint3": "gibt es in vielen Geschmacksrichtungen.",
+    },
+    "Stein": {
+        "hint1": "fester Naturgegenstand.",
+        "hint2": "kann klein oder groß sein.",
+        "hint3": "wird in Bauwerken oder zur Dekoration verwendet.",
+    },
+    "Wolke": {
+        "hint1": "schwebt am Himmel.",
+        "hint2": "besteht aus Wasserdampf.",
+        "hint3": "kann Regen bringen.",
+    },
+    "Schlitten": {
+        "hint1": "Fahrzeug ohne Räder.",
+        "hint2": "wird im Schnee benutzt.",
+        "hint3": "wird zu Weihnachten von Rentieren gezogen.",
+    },
+    "Fenster": {
+        "hint1": "Teil eines Hauses.",
+        "hint2": "lässt Licht hinein.",
+        "hint3": "kann geöffnet oder geschlossen werden.",
+    },
+    "Teller": {
+        "hint1": "Küchengegenstand.",
+        "hint2": "wird zum Servieren von Essen verwendet.",
+        "hint3": "kann aus Porzellan oder Plastik sein.",
+    },
+    "Teppich": {
+        "hint1": "liegt auf dem Boden.",
+        "hint2": "wird zur Dekoration oder zum Füßetrocknen benutzt.",
+        "hint3": "kann weich oder flach sein.",
     },
 }

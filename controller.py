@@ -17,11 +17,16 @@ class Controller:
             self.model.right_guess = guess
             self.model.tries = 0
             self.view.english_clicked(guess)
-        else:
+        elif language == "portugues":
             guess = self.model.randon_guess("portugues")
             self.model.right_guess = guess
             self.model.tries = 0
             self.view.portugues_clicked(guess)
+        else:
+            guess = self.model.randon_guess("deutsch")
+            self.model.right_guess = guess
+            self.model.tries = 0
+            self.view.deutsch_clicked(guess)
 
     def get_entry_guess(self, guess_entry):
         self.model.check_guess(guess_entry)
