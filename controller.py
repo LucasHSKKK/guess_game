@@ -51,5 +51,7 @@ class Controller:
     def try_again(self):
         if self.model.right_guess in global_variables.words_portugues:
             self.get_guess("portugues")
-        else:
+        elif self.model.right_guess in global_variables.words_english:
             self.get_guess("english")
+        else:
+            self.get_guess('deutsch')

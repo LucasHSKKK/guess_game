@@ -11,8 +11,10 @@ class Model:
     def randon_guess(self, language):
         if language == "english":
             return random.choice(list(global_variables.words_english.keys()))
-        else:
+        elif language == 'portugues':
             return random.choice(list(global_variables.words_portugues.keys()))
+        else:
+            return random.choice(list(global_variables.words_german.keys()))
 
     def check_guess(self, guess_entry):
         if guess_entry.lower() == self.right_guess.lower():
