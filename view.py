@@ -84,6 +84,16 @@ class View:
             command=lambda: self.controller.get_entry_guess(self.entry.get()),
         )
 
+        self.replace_button = tk.Button(
+            self.root,
+            text="new word",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
+            font=("Arial", 20),
+            command=lambda: self.controller.get_guess("english"),
+        )
+
         self.label_dica = tk.Label(
             self.root,
             text="Hint:",
@@ -103,6 +113,7 @@ class View:
         self.label.pack(pady=20)
         self.entry.pack(pady=20)
         self.button.pack(pady=20)
+        self.replace_button.pack(pady=20)
         self.label_dica.pack(pady=20)
         self.listbox.pack(
             pady=20,
@@ -143,62 +154,14 @@ class View:
             command=lambda: self.controller.get_entry_guess(self.entry.get()),
         )
 
-        self.label_dica = tk.Label(
+        self.replace_button = tk.Button(
             self.root,
-            text="Dica:",
-            font=("Arial", 20),
-        )
-
-        self.listbox = tk.Listbox(
-            self.root,
-            bg=self.root.cget("bg"),
-            fg="red",
-            font=("Arial", 20),
-        )
-
-        self.listbox.insert(0, global_variables.words[guess]["hint1"])
-
-        self.label.pack(pady=20)
-        self.entry.pack(pady=20)
-        self.button.pack(pady=20)
-        self.label_dica.pack(pady=20)
-        self.listbox.pack(
-            pady=20,
-            fill="both",
-        )
-
-    def deutsch_clicked(self, guess):
-        for widget in self.root.winfo_children():
-            widget.destroy()
-
-        self.bg = Image.open("images/bg2.png")
-        self.bg = self.bg.resize((1920, 1080))
-        self.bg = ImageTk.PhotoImage(self.bg)
-        self.label_bg = tk.Label(self.root, image=self.bg)
-        self.label_bg.place(x=0, y=0)
-
-        self.label = tk.Label(
-            self.root,
-            text="deine Vermutung:",
-            font=("Arial", 20),
-            bg="white",
-            fg="black",
-        )
-        self.entry = tk.Entry(
-            self.root,
-            bg="white",
-            fg="black",
-            bd=3,
-            font=("Arial", 20),
-        )
-        self.button = tk.Button(
-            self.root,
-            text="schicken",
+            text="trocar palavra",
             bg="#E9E9E9",
             fg="#0F2C25",
             activebackground="#5A706C",
             font=("Arial", 20),
-            command=lambda: self.controller.get_entry_guess(self.entry.get()),
+            command=lambda: self.controller.get_guess("portugues"),
         )
 
         self.label_dica = tk.Label(
@@ -219,12 +182,13 @@ class View:
         self.label.pack(pady=20)
         self.entry.pack(pady=20)
         self.button.pack(pady=20)
+        self.replace_button.pack(pady=20)
         self.label_dica.pack(pady=20)
         self.listbox.pack(
             pady=20,
             fill="both",
         )
-    
+
     def deutsch_clicked(self, guess):
         for widget in self.root.winfo_children():
             widget.destroy()
@@ -258,6 +222,15 @@ class View:
             font=("Arial", 20),
             command=lambda: self.controller.get_entry_guess(self.entry.get()),
         )
+        self.replace_button = tk.Button(
+            self.root,
+            text="neu wort",
+            bg="#E9E9E9",
+            fg="#0F2C25",
+            activebackground="#5A706C",
+            font=("Arial", 20),
+            command=lambda: self.controller.get_guess("deutsch"),
+        )
 
         self.label_dica = tk.Label(
             self.root,
@@ -277,12 +250,12 @@ class View:
         self.label.pack(pady=20)
         self.entry.pack(pady=20)
         self.button.pack(pady=20)
+        self.replace_button.pack(pady=20)
         self.label_dica.pack(pady=20)
         self.listbox.pack(
             pady=20,
             fill="both",
         )
-
 
     def win_screen(self):
         for widget in self.root.winfo_children():
